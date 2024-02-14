@@ -8,3 +8,13 @@ C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\obj\x86\Debug\XC_Fligh
 C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\obj\x86\Debug\XC_Flight_Tools.csproj.GenerateResource.cache
 C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\obj\x86\Debug\XC_Flight_Tools.Properties.Resources.resources
 C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\bin\Debug\ConsoleApplication.exe
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\bin\Debug\ConsoleApplication.pdb
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\XC_Flight_Tools.csproj.AssemblyReference.cache
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\XC_Flight_Tools.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\XC_Flight_Tools.Properties.Resources.resources
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\XC_Flight_Tools.csproj.GenerateResource.cache
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\XC_Flight_Tools.csproj.CoreCompileInputs.cache
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Lauren D'Angelo\Desktop\XC Flight Planning Tools\xc-flight-planning-tools\obj\x86\Debug\ConsoleApplication.pdb

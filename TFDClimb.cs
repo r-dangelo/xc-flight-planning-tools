@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using static System.Net.Mime.MediaTypeNames;
 
 public class TFDClimb
 {
@@ -30,18 +31,18 @@ public class TFDClimb
     void buildDictionary(){
         // For Values: [0] is time, [1], is fuel, [2] is distance
         climbValues.Add(0, new double[] { 0, 0, 0 });
-        climbValues.Add(1, new double[] { 1, 1, 1 });
-        climbValues.Add(2, new double[] { 1.5, 2, 4 });
-        climbValues.Add(3, new double[] { 2, 2.5, 5 });
-        climbValues.Add(4, new double[] { 4.5, 3, 8 });
-        climbValues.Add(5, new double[] { 8, 3.5, 11 });
+        climbValues.Add(1, new double[] { 2, 1, 1 });
+        climbValues.Add(2, new double[] { 4, 2, 4 });
+        climbValues.Add(3, new double[] { 5, 2.5, 5 });
+        climbValues.Add(4, new double[] { 7, 3, 8 });
+        climbValues.Add(5, new double[] { 9, 3.5, 11 });
         climbValues.Add(6, new double[] { 10, 4, 14 });
-        climbValues.Add(7, new double[] { 11, 4.5, 16.5 });
-        climbValues.Add(8, new double[] { 14, 5, 21 });
+        climbValues.Add(7, new double[] { 14, 4.5, 16.5 });
+        climbValues.Add(8, new double[] { 16, 5, 21 });
         climbValues.Add(9, new double[] { 18, 6, 28 });
-        climbValues.Add(10, new double[] { 22, 7, 32 });
+        climbValues.Add(10, new double[] { 23, 7, 32 });
         climbValues.Add(11, new double[] { 26, 8, 39 });
-        climbValues.Add(12, new double[] { 32, 9, 48 });
+        climbValues.Add(12, new double[] { 34, 9, 48 });
     }
 
     int calcDensityAlt(int OAT, int pressureAlt) {
@@ -112,6 +113,7 @@ public class TFDClimb
         Console.WriteLine("TIME TO CLIMB:");
         Console.WriteLine("Climb Time Value 1: " + climbTime1);
         Console.WriteLine("Climb Time Value 2: " + climbTime2);
+        Console.WriteLine("Climb Time regular number: " + (climbTime2 - climbTime1));
         Console.WriteLine("Climb Time: " + _climbTime.ToString("m\\:ss"));
         Console.WriteLine("");
     }
@@ -249,10 +251,24 @@ public class TFDClimb
         Console.WriteLine("Climb Dist: " + (climbDist2 - climbDist1));
     }
 
+    public void printInfo()
+    {
+        Console.WriteLine("TFD INFO");
+        calcTimePoints();
+        calcFuelPoints();
+        calcDistPoints();
+        Console.WriteLine();
+
+    }
+
     public static void Main(string[] args){
-        TFDClimb test = new TFDClimb(23, 2000, 15, 6000);
-        test.calcTimePoints();
-        test.calcFuelPoints();
-        test.calcDistPoints();
+        TFDClimb test = new TFDClimb(12, 2000, 5, 5500);
+        test.printInfo();
+
+        CruisePerformance66 tester = new CruisePerformance66(5500, 5);
+        tester.findInfo();
+
+        TFDDescend testee = new TFDDescend();
+        testee.displayInfo();
     }
 }

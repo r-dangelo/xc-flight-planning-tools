@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 
-public class CruisePerformance65
+public class CruisePerformance66
 {
     int pressureAlt = 0;
     int OAT = 0;
@@ -10,7 +9,8 @@ public class CruisePerformance65
     int densityAlt = 0;
 
 
-    public CruisePerformance65(int _pressureAlt, int _OAT){
+    public CruisePerformance66(int _pressureAlt, int _OAT)
+    {
         pressureAlt = _pressureAlt;
         OAT = _OAT;
         densityAlt = calcDensityAlt(_OAT, _pressureAlt);
@@ -26,23 +26,27 @@ public class CruisePerformance65
 
     void setRPMs()
     {
-        int _tempRPM = ((-0.000277625 * densityAlt - 18.8995) * (-0.000277625 * densityAlt - 18.8995)) + 2046.42;
+        int _tempRPM = (int)(((-0.000277625 * densityAlt - 18.8995) * (-0.000277625 * densityAlt - 18.8995)) + 2046.42);
 
         RPM = 5 * (int)Math.Round(_tempRPM / 5.0);
 
-        Console.WriteLine("RPMS: ");
-        Console.WriteLine(RPM);
+        Console.WriteLine("RPMS: " + RPM);
 
     }
 
     void setTAS()
     {
-        // dont forget to subtract 3 for wheel pants
+        // subtract 3 for no wheel pants
+        TAS = (int)(Math.Round(0.000501726 * densityAlt + 113.899)) - 3;
+        Console.WriteLine("TAS: " + TAS);
     }
 
-    public static void Main(string[] args)
+    public void findInfo()
     {
-        CruisePerformance65 test = new CruisePerformance65(6000, 13);
-        test.setRPMs();
+        Console.WriteLine("CRUISE PERFORMANCE:");
+        setRPMs();
+        setTAS();
+        Console.WriteLine();
     }
+
 }
