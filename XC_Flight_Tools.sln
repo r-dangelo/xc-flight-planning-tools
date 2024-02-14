@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC_Flight_Tools", "XC_Flight_Tools.csproj", "{7AD452B1-7FB1-4F96-A05D-0E26F2062C40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD452B1-7FB1-4F96-A05D-0E26F2062C40}.Debug|x86.ActiveCfg = Debug|x86
+		{7AD452B1-7FB1-4F96-A05D-0E26F2062C40}.Debug|x86.Build.0 = Debug|x86
+		{7AD452B1-7FB1-4F96-A05D-0E26F2062C40}.Release|x86.ActiveCfg = Release|x86
+		{7AD452B1-7FB1-4F96-A05D-0E26F2062C40}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD96E907-6D4D-445A-96CB-AFE482CBBA60}
+	EndGlobalSection
+EndGlobal
